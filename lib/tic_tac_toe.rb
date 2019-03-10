@@ -122,8 +122,6 @@ end
 ## draw?(board) is failing calls won? and full?  not entirely sure why  should the cats game be here or in play(board)?
 
 def draw?(board)
-  ##won?(board)
-  ##full?(board)
   if won?(board) == false && full?(board) == true
       puts "Cat's Game!"
       return true
