@@ -188,12 +188,11 @@ def play(board)
   end
   if won?(board) == true
     winner(board)
-  end 
+  end
   if over?(board)
     if draw?(board)
     ##  puts "Cat's Game!"
       draw?(board)
     end
   end
-end
 end
