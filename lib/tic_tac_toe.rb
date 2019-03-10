@@ -159,7 +159,7 @@ def winner(board)
 end
 
 def play(board)
-  input = gets.strip
+  ##input = gets.strip
   turn(board)
   over?(board)
   while over?(board) == false
