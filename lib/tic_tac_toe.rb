@@ -187,9 +187,7 @@ def play(board)
     turn(board)
   end
   if won?(board) == true
-    ##puts "good game"
     winner(board)
-  ##  break
 
   if over?(board)
     if draw?(board)
