@@ -50,7 +50,6 @@ def valid_move?(array, index)
 end
 
 def turn_count(board)
-##  puts board.count("X") + board.count("O")
   return board.count("X") + board.count("O")
 end
 
