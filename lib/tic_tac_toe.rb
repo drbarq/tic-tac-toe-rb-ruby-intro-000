@@ -192,7 +192,7 @@ def play(board)
   if over?(board)
     if draw?(board)
       puts "Cat's Game!"
-      draw?(board)
+    ##  draw?(board)
     end
   end
 end
