@@ -160,7 +160,7 @@ end
 
 ## moved the gets here but got more errors
 def play(board)
- input = gets
+ ## input = gets
   turn(board)
   over?(board)
   while over?(board) == false
