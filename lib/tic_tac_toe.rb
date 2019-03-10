@@ -152,8 +152,9 @@ def draw?(board)
     end
 ##  else
   ##  puts "3"
-  end
-    return false8
+end 
+    return false
+
 end
 
 def over?(board)
@@ -170,9 +171,13 @@ def winner(board)
   won?(board)
     if won?(board)
       if board.count("X") > board.count("O")
+     ##   puts board.count("X")
+    ##    puts board.count("0")
         puts "Congratulations X!"
         return "X"
       else
+    ##    puts board.count("X")
+      ##  puts board.count("0")
         puts "Congratulations O!"
         return "O"
       end
@@ -190,10 +195,13 @@ def play(board)
     turn(board)
   end
   if won?(board) == true
+    ##puts "good game"
     winner(board)
+  ##  break
+
   if over?(board)
     if draw?(board)
-    ##  puts "Cat's Game!"
+      puts "Cat's Game!"
       draw?(board)
     end
   end
