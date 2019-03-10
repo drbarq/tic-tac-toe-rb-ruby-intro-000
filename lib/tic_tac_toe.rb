@@ -77,9 +77,9 @@ def turn(board)
       move(board, index, value)
       display_board(board)
     else
-    ##  puts "Invalid move, please select again"
-    ##  display_board(board)
-    ##  turn(board)
+      puts "Invalid move, please select again"
+      display_board(board)
+      turn(board)
     end
 end
 
