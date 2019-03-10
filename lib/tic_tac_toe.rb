@@ -150,10 +150,11 @@ def draw?(board)
     ##  puts "2"
       return false
     end
-  else
+##  else
   ##  puts "3"
+end 
     return false
-  end
+
 end
 
 def over?(board)
