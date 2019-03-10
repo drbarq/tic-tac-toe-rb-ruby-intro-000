@@ -1,6 +1,6 @@
 ## All of our game methods will be coded here.
 
-##
+## my number one problem with all these tests is 'declaring' the methods in the top of other methods when it is unnessecary 
 
 
 def display_board(board)
@@ -21,7 +21,6 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [6,4,2]
 ]
-
 
 def input_to_index(input)
   index = input.to_i - 1
@@ -65,8 +64,6 @@ def current_player(board)
   end
 end
 
-## in CLI it asks for a new move if invalid.  what is it to return?
-
 def turn(board)
   puts "Please enter 1-9:"
   input = gets
@@ -83,13 +80,9 @@ def turn(board)
     end
 end
 
-
-
 def turn_count(board)
   return board.count("X") + board.count("O")
 end
-
-
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
@@ -119,8 +112,6 @@ def full?(board)
 return true
 end
 
-## draw?(board) is failing calls won? and full?  not entirely sure why  should the cats game be here or in play(board)?
-
 def draw?(board)
   if won?(board) == false && full?(board) == true
       puts "Cat's Game!"
@@ -142,7 +133,6 @@ def over?(board)
 end
 
 def winner(board)
-##  won?(board)
     if won?(board)
       if board.count("X") > board.count("O")
         puts "Congratulations X!"
@@ -154,7 +144,6 @@ def winner(board)
     end
 end
 
-## moved the gets here but got more errors
 def play(board)
   while over?(board) == false
     turn(board)
@@ -164,7 +153,6 @@ def play(board)
   end
   if over?(board)
     if draw?(board)
-    ##  puts "Cat's Game!"
       draw?(board)
     end
   end
