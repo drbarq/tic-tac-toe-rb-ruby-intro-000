@@ -1,6 +1,6 @@
 ## All of our game methods will be coded here.
 
-## my number one problem with all these tests is 'declaring' the methods in the top of other methods when it is unnessecary 
+## my number one problem with all these tests is 'declaring' the methods in the top of other methods when it is not needed 
 
 
 def display_board(board)
