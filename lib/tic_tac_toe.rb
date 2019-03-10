@@ -174,8 +174,8 @@ def play(board)
   end
   if over?(board)
     if draw?(board)
-      puts "Cat's Game!"
-    ##  draw?(board)
+    ##  puts "Cat's Game!"
+      draw?(board)
     end
   end
 end
