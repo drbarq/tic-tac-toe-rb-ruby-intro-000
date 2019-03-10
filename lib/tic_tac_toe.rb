@@ -158,6 +158,7 @@ def winner(board)
     end
 end
 
+## moved the gets here but got more errors 
 def play(board)
   ##input = gets.strip
   turn(board)
