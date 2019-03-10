@@ -150,10 +150,10 @@ def winner(board)
     if won?(board)
       if board.count("X") > board.count("O")
         puts "Congratulations X!"
-      ##  return "X"
+        return "X"
       else
         puts "Congratulations O!"
-      ##  return "O"
+        return "O"
       end
     end
 end
