@@ -160,10 +160,6 @@ end
 
 ## moved the gets here but got more errors
 def play(board)
-  input = gets.strip
-  input_to_index(input)
-  index = input_to_index(input)
-  value = current_player(board)
   ##input = gets.strip
   turn(board)
   over?(board)
