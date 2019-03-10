@@ -79,7 +79,7 @@ def turn(board)
     else
       puts "Invalid move, please select again"
     ##  display_board(board)
-    ##  turn(board)
+      turn(board)
     end
 end
 
