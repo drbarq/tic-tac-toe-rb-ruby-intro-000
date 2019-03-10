@@ -146,9 +146,10 @@ def draw?(board)
     ##  puts "Cat's Game!"
       return true
     else
+      won?(board)
       return false
     end
-
+    full?(board)
     return false
 end
 
