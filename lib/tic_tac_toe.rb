@@ -153,7 +153,7 @@ def draw?(board)
 ##  else
   ##  puts "3"
   end
-    return false
+    return false8
 end
 
 def over?(board)
@@ -170,13 +170,9 @@ def winner(board)
   won?(board)
     if won?(board)
       if board.count("X") > board.count("O")
-     ##   puts board.count("X")
-    ##    puts board.count("0")
         puts "Congratulations X!"
         return "X"
       else
-    ##    puts board.count("X")
-      ##  puts board.count("0")
         puts "Congratulations O!"
         return "O"
       end
