@@ -190,13 +190,10 @@ def play(board)
     turn(board)
   end
   if won?(board) == true
-    ##puts "good game"
     winner(board)
-  ##  break
-
   if over?(board)
     if draw?(board)
-      puts "Cat's Game!"
+    ##  puts "Cat's Game!"
       draw?(board)
     end
   end
