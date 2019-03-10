@@ -132,7 +132,7 @@ def draw?(board)
       return false
     end
     ## full?(board)
-  ##  return false
+    return false
 end
 
 def over?(board)
