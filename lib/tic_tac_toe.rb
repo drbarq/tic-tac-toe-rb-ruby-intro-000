@@ -57,17 +57,16 @@ end
 def current_player(board)
   turn_count(board)
   if board.count(" ") == 9
-  ##  puts "X"
     return "X"
   end
   if board.count(" ").even?
-  ##  puts "O"
     return "O"
   else
-  ##  puts "X"
     return "X"
   end
 end
+
+## in CLI it asks for a new move if invalid.  what is it to return?
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -88,27 +87,9 @@ end
 
 
 def turn_count(board)
-##  puts board.count("X") + board.count("O")
   return board.count("X") + board.count("O")
 end
 
-=begin
-def current_player(board)
-  turn_count(board)
-## count the spaces
-  if board.count(" ") == 9
-    puts "X"
-    return "X"
-  end
-  if board.count(" ").even?
-    puts "O"
-    return "O"
-  else
-    puts "X"
-    return "X"
-  end
-end
-=end
 
 
 def won?(board)
@@ -139,6 +120,8 @@ def full?(board)
 return true
 end
 
+## draw?(board) is failing calls won? and full?  not entirely sure why
+
 def draw?(board)
   won?(board)
   full?(board)
@@ -146,10 +129,10 @@ def draw?(board)
     ##  puts "Cat's Game!"
       return true
     else
-      won?(board)
+    ##  won?(board)
       return false
     end
-    full?(board)
+    ## full?(board)
     return false
 end
 
