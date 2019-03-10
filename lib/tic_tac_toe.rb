@@ -77,11 +77,12 @@ def turn(board)
     if valid_move?(board, index)
       move(board, index, value)
       display_board(board)
-    else
-      puts "Invalid move, please select again"
+  ##  else
+  ##    puts "Invalid move, please select again"
     ##  display_board(board)
     ##  turn(board)
     end
+    puts "Invalid move, please select again"
 end
 
 
