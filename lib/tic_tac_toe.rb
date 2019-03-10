@@ -69,7 +69,7 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets.strip
+##  input = gets.strip
   input_to_index(input)
   index = input_to_index(input)
   value = current_player(board)
@@ -159,6 +159,7 @@ def winner(board)
 end
 
 def play(board)
+  input = gets
   turn(board)
   over?(board)
   while over?(board) == false
