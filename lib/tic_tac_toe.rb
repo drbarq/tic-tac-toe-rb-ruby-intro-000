@@ -152,7 +152,7 @@ def draw?(board)
     end
 ##  else
   ##  puts "3"
-  end 
+  end
     return false
 end
 
