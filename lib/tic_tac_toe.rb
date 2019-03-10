@@ -151,11 +151,11 @@ def winner(board)
       if board.count("X") > board.count("O")
         puts "Congratulations X!"
         return "X"
-        break
+        
       else
         puts "Congratulations O!"
         return "O"
-        break
+
       end
     end
 end
