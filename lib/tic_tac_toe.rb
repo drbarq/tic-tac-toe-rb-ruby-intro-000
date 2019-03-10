@@ -147,11 +147,8 @@ def draw?(board)
       puts "Cat's Game!"
       return true
     else
-    ##  puts "2"
       return false
     end
-##  else
-  ##  puts "3"
   end
     return false
 end
