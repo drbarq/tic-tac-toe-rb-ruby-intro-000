@@ -119,7 +119,7 @@ def full?(board)
 return true
 end
 
-## draw?(board) is failing calls won? and full?  not entirely sure why
+## draw?(board) is failing calls won? and full?  not entirely sure why  should the cats game be here or in play(board)?
 
 def draw?(board)
   won?(board)
